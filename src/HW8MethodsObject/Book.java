@@ -2,8 +2,8 @@ package HW8MethodsObject;
 
 public class Book {
 // ОПИСАНИЕ КЛАССА
-    private Autor autorName;
-    private Autor autorLastName;
+    private String autorName;
+    private String autorLastName;
     private String bookName;
     private int publishingYear;
 
