@@ -1,4 +1,4 @@
-package HW8MethodsObject;
+package HW7MethodsObject;
 
 public class Autor {
     // ОПИСАНИЕ КЛАССА

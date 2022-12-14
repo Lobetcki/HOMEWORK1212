@@ -1,6 +1,6 @@
-package HW8MethodsObject;
+package HW7MethodsObject;
 
-public class HW8MethodsObject {
+public class HW7MethodsObject {
 
     public static void main(String[] args) {
 
