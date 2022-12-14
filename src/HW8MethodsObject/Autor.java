@@ -1,5 +1,7 @@
 package HW8MethodsObject;
 
+import java.util.Objects;
+
 public class Autor {
     // ОПИСАНИЕ КЛАССА
     private String name;
@@ -12,6 +14,41 @@ public class Autor {
         this.lastName = lastName;
         this.age = age;
     }
+
+    // Метод @Override toString
+    @Override
+    public String toString() {
+        return this.name + " " + this.lastName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Autor autor = (Autor) o;
+        return lastName.equals(autor.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(lastName);
+    }
+
+    // Метод @Override equals
+//    @Override
+//    public boolean equals(Object other) {
+//        if (this.getClass() != other.getClass()) {
+//            return false;
+//        }
+//        Autor c2 = (Autor) other;
+//        return lastName.equals(c2.lastName);
+//    }
+
+
+//    @Override
+//    public int hashCode() {
+//        return java.util.Objects.hash(lastName);
+
     // ГЕТЫ
     public String getName() {
         return this.name;
