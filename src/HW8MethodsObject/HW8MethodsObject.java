@@ -9,8 +9,8 @@ public class HW8MethodsObject {
         Autor dostoevski = new Autor("Николай", "Достоевский", 75);
 
         //  СОЗДАЕМ ОБЪЕКТ КНИГА
-        Book warAndPeace = new Book(tolstoy.getName(), tolstoy.getLastName(), "Война и Мир", 1845);
-        Book prestuplenie = new Book(dostoevski.getName(), dostoevski.getLastName(), "Преступление и наказание", 1865);
+        Book warAndPeace = new Book(tolstoy, "Война и Мир", 1845);
+        Book prestuplenie = new Book(dostoevski, "Преступление и наказание", 1865);
 
        //   МЕНЯЕМ ЗНАЧЕНИЯ
         warAndPeace.setPublishingYear(1820);

@@ -3,14 +3,12 @@ package HW8MethodsObject;
 public class Book {
 // ОПИСАНИЕ КЛАССА
     private Autor autorName;
-    private Autor autorLastName;
     private String bookName;
     private int publishingYear;
 
 // КОНСТРУКТОР
-    public Book(Autor autorName, Autor autorLastName, String bookName, int publishingYear) {
+    public Book(Autor autorName, String bookName, int publishingYear) {
         this.autorName = autorName;
-        this.autorLastName = autorLastName;
         this.bookName = bookName;
         this.publishingYear = publishingYear;
     }
@@ -18,10 +16,6 @@ public class Book {
 // ГЕТЫ
     public Autor getAutorName() {
         return this.autorName;
-    }
-
-    public Autor getAutorLastName() {
-        return this.autorLastName;
     }
 
     public String getBookName() {
